@@ -28,7 +28,10 @@
     responsable y ordenada. Tengo experiencia trabajando en equipo,
     escucho las ideas de mis compañeros y me desempeño bien para
     el avance de los trabajos.
-* Llamozas Diaz, Edson Diego 
+* Llamozas Diaz, Edson Diego
+    <p align="center"> 
+    <img src="diego_foto.jpg" width="200">
+
     * Ing. de Software
     * **Acerca de:** Me considero una persona responsable y
     optimista, capaz de trabajar en equipo. Me gusta jugar videojuegos
@@ -132,3 +135,156 @@ Nuestra aplicación está dirigida a personas que buscan ropa de calidad a preci
 - Personas con un presupuesto limitado que buscan ropa de calidad a precios asequibles.
 
 Nuestra aplicación ofrece una amplia selección de ropa de segunda mano en excelentes condiciones, desde prendas básicas hasta piezas de diseñador. Ofrecemos una experiencia de compra fácil y segura, con opciones de pago convenientes y envío rápido.
+
+
+# **CAPÍTULO 3: REQUIREMENT SPECIFICATIONS**
+## *3.1 TO-BE SCENARIO MAPPING*
+
+### User Persona 01 - Cliente
+
+|PHASES|ELECCIÓN DE PRENDA A COMPRAR|REVISAR DISPONIBILIDAD DE PRENDA|REALIZAR COMPRA|
+|------|----------------------------|--------------------------------|---------------|
+|DOING|Buscar en la aplicación RSL las prendas|Utilizar las funciones para seleccionar la prenda indicada|Seleccionar la prenda y comprarla|
+|THINKING|"Me pregunto si podré conseguir las prendas"|"Espero encontrar las prendas lo más barato posible"|"Espero que se entreguen las prendas"|
+|FEELING|Preocupado por encontrar las prendas|Nervioso por saber el precio de las prendas|Emocionado por que lleguen las prendas|
+
+### User Persona 02 - Vendedor
+|PHASES|RECIBIR ORDEN DE ENVÍO|LLEGAR A LA DIRECCIÓN DE ENTREGA|ENTREGAR PEDIDO|
+|------|----------------------------|--------------------------------|---------------|
+|DOING|Procesar el pedido de la prenda por la app RSL|Me dirijo a la dirección del cliente|Entrego el pedido|
+|THINKING|"Me pregunto cuántos productos pedirán"|"Espero tener prendas suficientes"|"Espero llegue el repartidor a tiempo"|
+|FEELING|Preocupado por si entregaré la prenda a tiempo|Nervioso por saber si tengo suficientes prendas|Satisfecho por realizar una buena venta|
+
+### User Persona 03 - Repartidor
+|PHASES|ELECCIÓN DE PRENDA A COMPRAR|REVISAR DISPONIBILIDAD DE PRENDA|REALIZAR COMPRA|
+|------|----------------------------|--------------------------------|---------------|
+|DOING|Recibir orden de envío y prepararla|Recoger la prenda y dirigirse a la zona de entrega|Realizar la entrega|
+|THINKING|"Me pregunto si tendrá la prenda"|"Espero encontrar la prenda "|"Espero sea la prenda correcta"|
+|FEELING|Preocupado por saber si llegaré a la hora indicada|Nervioso por saber si habrá prendas suficientes|Satisfecho por realizar una buena entrega|
+
+## 3.2 *HISTORIAS DE USUARIO - www.RSL.com*
+
+### EP01: GESTIÓN DE REGISTROS - ABASTECIMIENTOS
+
+Como propietario de una aplicación que categoriza prendas de ropa subidas por los usuarios, quiero agregar proveedores a mi aplicación para que puedan anunciar sus productos de manera continua.
+
+- **HU01: Confirmación de Registro**
+  Como propietario de una aplicación de categorización de ropa, quiero recibir confirmación de registro por parte del usuario.
+
+- **HU02: Aviso de Error**
+  Como propietario de una aplicación de categorización de ropa, quiero recibir una notificación cuando un proceso de registro de usuario no se complete con éxito.
+
+- **HU03: Retiro de negocios de la aplicación**
+  Como jefe del departamento de ventas, quiero notificar y eliminar negocios de la aplicación que infrinjan las políticas de la aplicación.
+
+### EP02: GESTIÓN DE REGISTROS - USUARIOS
+
+Como propietario de una aplicación que categoriza prendas de ropa subidas por los usuarios, quiero agregar proveedores a mi aplicación para que puedan anunciar sus productos de manera continua.
+
+- **HU04: Confirmación de Registro de perfil**
+  Como propietario de una aplicación de categorización de ropa, quiero recibir confirmación de registro de perfil por parte del usuario.
+
+- **HU05: Verificación de no ser un robot**
+  Como propietario de una aplicación de categorización de ropa, quiero recibir una notificación cuando las cuentas que intentan acceder a la aplicación sean usuarios que no pasan la prueba de entrada básica.
+
+- **HU06: Bloquear a clientes indeseables**
+  Como jefe del departamento de ventas, quiero recibir notificaciones sobre clientes con informes para poder bloquear esas cuentas.
+  
+  ## 3.3 *IMPACT MAPPING*
+  <p align="center">
+  <img src="Impact_mapping.png" width="500">
+
+  ## 3.4 *PRODUCT BACKLOG*
+  ### HU01
+  Debe mostrar una confirmación de registro del usuario.
+  ### HU02
+  Debe mostrar un aviso que indique cuando no se completa de manera exitosa un
+  registro en la aplicación.
+  ### HU03
+  Debe permitir retirar de la aplicación a aquellos negocios que vayan en contra de las
+  políticas de la aplicación.
+  ### HU04
+  Debe mostrar una confirmación de registro del usuario.
+  ### HU05
+  Debe mostrar un aviso que indique cuando las cuentas que intentan ingresar al
+  aplicativo son usuarios que fallan la prueba básica de ingreso.
+  ### HU06
+  Debe mostrar notificaciones de los clientes que tengan reportes para poder bloquear
+  esas cuentas.
+
+# **CAPÍTULO 5: PRODUCT IMPLEMENTATION**
+## *5.1 PRODUCT IMPLEMENTATION & DEPLOYMENT*
+
+### Sprint 1
+
+**Sprint Backlog 1**
+
+| Sprint   | Historia de usuario     | Tareas                      | Estado    |
+|----------|-------------------------|-----------------------------|-----------|
+| SPRINT 1:Implementar la     interfaz de la landing page, así  como las páginas  de login y registro Registro de usuarios|                         |                             |           |
+| HU01     |     | Elaborar prototipo          | Finalizado|
+|          |                         | Implementar landing page | Finalizado|
+|          |                         | Implementar página de  registro | En proceso|
+| HU02     | Aviso de Error           | Validar email y contraseña   | En proceso|
+|          |                         | Implementar aviso de error   | Pendiente |
+| HU03     | Confirmación             | Mostrar mensaje de   confirmación        | En proceso|
+|          | de registro de perfil
+|          |                         | Almacenar email y contraseña | Pendiente |
+
+### User Interface & Execution
+
+En el Sprint 1 logramos prototipar las ventanas principales de la aplicación e implementar la landing page de nuestra aplicación.
+
+### Team Collaboration Insights
+
+- [nombre] realizó el prototipado de la aplicación utilizando Figma.
+- [nombre]realizó la implementación de la landing page.
+
+### VIDEO ABOUT THE PRODUCT
+
+El video muestra el Happy User Flow al momento de iniciar sesión, registrarse, navegar por el menú principal y agregar productos al carrito.
+
+Link: [Video sobre el producto](https://youtu.be/D72OJDVfnfE)
+
+
+### 5.1.1 Software Development Environment Configuration
+
+**Figma:**
+Es un programa utilizado para el diseño de productos. Sobretodo es ideal para la creación de interfaces de usuario, tanto web como móvil. Además, también permite la creación de prototipos. Todas estas funcionalidades a través de su aplicación web. Decidimos utilizar esta herramienta ya que nos permite trabajar paralelamente sobre el mismo archivo, agilizando el tiempo de creación de las interfaces y prototipos.
+Link: [Figma](https://www.figma.com/file/lfmNhtNWXtErN7awQ7emJw/Untitled?nodeid=0%3A1)
+
+**GitHub:**
+Es un repositorio online de código de aplicaciones que se están desarrollando. La plataforma fue creada para que los desarrolladores suban el código de sus aplicaciones. GitHub nos provee de una fuente donde almacenar y verificar los cambios en nuestro código de una manera transparente. Además, nos facilita el poder volver atrás si ocurre un error en la aplicación.
+Link: [GitHub Repository](https://github.com/JhonelRios/ihc-2021-landingpage)
+
+**Trello:**
+Es un software de administración de proyectos a través de una interfaz web o móvil. Optamos por esta aplicación ya que nos permite designar tareas a cada integrante del grupo de una manera sencilla y nos permite visualizar en qué estado se encuentra dicha tarea.
+
+### 5.1.2 Source Code Management
+
+En nuestro proyecto aplicaremos GitFlow de la siguiente manera:
+
+- **Main:** La rama principal donde se encontrará la aplicación totalmente funcional. A esta rama se le hará merge de la rama de Develop.
+- **Develop:** En esta rama nos centraremos en probar nuevas funcionalidades y asegurarnos de que no generan errores con la aplicación actual.
+- **Feature:** Pueden existir varias ramas de este tipo, donde cada una de ellas se encarga de una funcionalidad específica de la aplicación.
+
+### 5.1.3 Source Code Style Guide & Conventions
+
+**HTML y CSS:**
+En el caso de estas 2 tecnologías decidimos utilizar la guía de estilos que provee Google, ya que consideramos que es sencilla de entender y mantiene una buena legibilidad en el código. Las principales reglas que da son:
+- Usar una indentación de 2 espacios.
+- Solo usar letras minúsculas.
+- Remover espacios sobrantes.
+- Agregar comentarios al código cuando sea necesario.
+Link: [Guía de Estilos HTML y CSS de Google](https://google.github.io/styleguide/htmlcssguide.html)
+
+**JavaScript:**
+En el caso de JavaScript optamos por seguir la guía de estilos de AirBnB, ya que es de las más utilizadas y recomendadas en el desarrollo frontend. Las principales reglas son:
+- Utilizar punto y coma al final de cada bloque de código.
+- Agregar comentarios al código cuando sea necesario.
+- Después y antes de utilizar un operador matemático debemos agregar espacios.
+- Las variables deben tener nombres que las identifiquen claramente.
+Link: [Guía de Estilos JavaScript de AirBnB](https://github.com/airbnb/javascript)
+
+
+
